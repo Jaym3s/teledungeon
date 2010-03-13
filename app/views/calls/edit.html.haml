@@ -1,0 +1,6 @@
+%h2 Editing call
+= render :partial => "form", :locals => {:call => @call}
+%ul
+  %li= link_to 'Show', @call
+  %li= link_to 'Back', calls_path
+  %li= link_to 'Destroy', @call, :confirm => 'Are you sure?', :method => :delete  

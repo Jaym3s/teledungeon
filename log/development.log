@@ -1,0 +1,244 @@
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.9ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateCalls (20100313223624)
+  [4;36;1mSQL (0.5ms)[0m   [0;1mCREATE TABLE "calls" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "caller" varchar(255), "called" varchar(255), "callguid" varchar(255), "channeltype" varchar(255), "callerinput" text, "callerinputhistory" text, "callername" varchar(255), "callerlocation" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100313223624')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("calls")[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-13 16:38:09) [GET]
+
+ActionController::RoutingError (No route matches "/call" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-13 16:38:14) [GET]
+
+ActionController::RoutingError (No route matches "/caller" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-13 16:38:21) [GET]
+
+ActionController::RoutingError (No route matches "/call" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-13 16:38:24) [GET]
+
+ActionController::RoutingError (No route matches "/call/new" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:39:30) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x1034ed118>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (28.6ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:20) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x1031c2970>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (84.5ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:21) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x10356dc50>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:22) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x10333a7f8>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (95.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:22) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103661698>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (29.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:22) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103471a68>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (28.3ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:22) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103228108>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (92.5ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:23) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103570950>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (27.6ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:23) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103346e90>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (93.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:23) [GET]
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103666260>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (29.0ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:23) [GET]
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x103476130>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:40:23) [GET]
+  [4;36;1mSQL (0.4ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+
+NoMethodError (undefined method `paginate' for #<Class:0x10322c8e8>):
+  app/controllers/calls_controller.rb:36:in `index'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (93.7ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallsController#index (for 127.0.0.1 at 2010-03-13 16:44:33) [GET]
+  [4;36;1mCall Load (0.3ms)[0m   [0;1mSELECT * FROM "calls" LIMIT 20 OFFSET 0[0m
+Rendering template within layouts/application
+Rendering calls/index
+Completed in 20ms (View: 17, DB: 0) | 200 OK [http://localhost/calls]
