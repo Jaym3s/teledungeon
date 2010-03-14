@@ -783,3 +783,111 @@ Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
 Processing CallController#create (for 127.0.0.1 at 2010-03-13 18:01:39) [POST]
   Parameters: {"callerinput"=>"\"hello\""}
 Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:05:53) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (82.3ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:05:58) [GET]
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (27.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:11) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (31.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:14) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (92.2ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:15) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (26.5ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:26) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:27) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (27.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:27) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (27.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:28) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (27.8ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ActionController::Base#create (for 127.0.0.1 at 2010-03-13 18:06:41) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (uninitialized constant ApplicationController):
+  app/controllers/call_controller.rb:1
+
+Rendered rescues/_trace (26.9ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
