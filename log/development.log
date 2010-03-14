@@ -891,3 +891,128 @@ NameError (uninitialized constant ApplicationController):
 Rendered rescues/_trace (26.9ms)
 Rendered rescues/_request_and_response (0.3ms)
 Rendering rescues/layout (internal_server_error)
+
+
+Processing CallController#create (for 127.0.0.1 at 2010-03-13 18:10:06) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#start (for 127.0.0.1 at 2010-03-13 18:31:46) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+SyntaxError (/Users/jaymes/workingDir/work/teledungeon/app/controllers/call_controller.rb:5: syntax error, unexpected '\n', expecting tASSOC):
+  
+
+Rendered rescues/_trace (76.7ms)
+Rendered rescues/_request_and_response (1.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#start (for 127.0.0.1 at 2010-03-13 18:32:34) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+SyntaxError (/Users/jaymes/workingDir/work/teledungeon/app/controllers/call_controller.rb:5: syntax error, unexpected ']', expecting tASSOC
+...ll/echo","@options" => "0,"}}]}
+                              ^):
+  
+
+Rendered rescues/_trace (25.1ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#start (for 127.0.0.1 at 2010-03-13 18:32:47) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+SyntaxError (/Users/jaymes/workingDir/work/teledungeon/app/controllers/call_controller.rb:4: syntax error, unexpected ']', expecting tASSOC
+...ll/echo","@options" => "0,"}}]}
+                              ^):
+  
+
+Rendered rescues/_trace (26.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:33:41) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (undefined local variable or method `request_uri' for #<CallController:0x1031e5da8>):
+  app/controllers/call_controller.rb:4:in `start'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (27.2ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:34:01) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NameError (undefined local variable or method `request_uri' for #<CallController:0x103506c30>):
+  app/controllers/call_controller.rb:5:in `start'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (27.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:34:12) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:34:33) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+NoMethodError (undefined method `url' for #<Hash:0x1032ea140>):
+  app/controllers/call_controller.rb:5:in `start'
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendered rescues/_trace (89.4ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:35:07) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:35:18) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing CallController#start (for 127.0.0.1 at 2010-03-13 18:36:05) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+Completed in 2ms (View: 0, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-13 18:43:13) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+ActionController::RoutingError (No route matches "/dungeon" with {:method=>:post}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing CallController#dungeon (for 127.0.0.1 at 2010-03-13 18:43:21) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+ActionController::UnknownAction (No action responded to dungeon. Actions: dungeon_master and start):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (not_found)
+
+
+Processing CallController#dungeon_master (for 127.0.0.1 at 2010-03-13 18:43:40) [POST]
+  Parameters: {"callerinput"=>"\"hello\""}
+
+ActionView::MissingTemplate (Missing template call/dungeon_master.erb in view path app/views):
+  haml (2.2.20) lib/sass/plugin/rails.rb:20:in `process'
+
+Rendering rescues/layout (internal_server_error)
