@@ -1,8 +1,0 @@
-%h2 Listing calls
-- if !@calls.empty?
-  .calls
-    = render :partial => "call", :collection => @calls
-  = will_paginate(@calls)
-- else
-  %p There are no calls to show yet.
-= link_to 'New call', new_call_path
